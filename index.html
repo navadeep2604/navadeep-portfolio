@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Navadeep Koppoku — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+<!-- Top progress bar -->
+<div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+<!-- Header / Nav -->
+<header class="site-header">
+  <div class="brand">Navadeep Koppoku</div>
+  <nav class="nav" id="nav">
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#certs">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+</header>
+
+<!-- Floating social icons -->
+<div class="social-icons" aria-hidden="true">
+  <a href="https://www.linkedin.com/in/navadeep-koppoku-0056082b8/" target="_blank">in</a>
+  <a href="https://github.com/navadeep2604" target="_blank">gh</a>
+</div>
+
+<!-- Hero -->
+<main>
+<section id="home" class="hero">
+  <div class="hero-left">
+    <div id="globe-wrapper">
+      <canvas id="globe-canvas" aria-hidden="true"></canvas>
+      <!-- fallback static image if needed -->
+      <img id="globe-fallback" src="assets/globe_fallback.png" alt="" />
+    </div>
+  </div>
+  <div class="hero-right">
+    <h1 class="name">Navadeep Koppoku</h1>
+    <div class="contact-block">
+      <a href="tel:+918555087052">+91 85550 87052</a>
+      <a href="mailto:navadeepkoppoku1@gmail.com">navadeepkoppoku1@gmail.com</a>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/navadeep-koppoku-0056082b8/" target="_blank">LinkedIn</a> · 
+        <a href="https://github.com/navadeep2604" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- animated line separator -->
+<div class="line-sep" aria-hidden="true"><span></span></div>
+
+<!-- Skills -->
+<section id="skills" class="section skills">
+  <h2>Skills & Internship</h2>
+  <div class="skills-grid">
+    <div class="skill-card">VLSI Physical Design<br/><small>Floorplanning, Placement, CTS, STA</small></div>
+    <div class="skill-card">Programming<br/><small>C, Python, Embedded C, TCL</small></div>
+    <div class="skill-card">Internship<br/><small>Physical Design at Bitsilica (May–Jun 2025)</small></div>
+  </div>
+</section>
+
+<div class="line-sep"><span></span></div>
+
+<!-- Education -->
+<section id="education" class="section education">
+  <h2>Education</h2>
+  <div class="edu-list">
+    <div class="edu-item"><strong>B.Tech ECE</strong> — AVN Institute (2022–Present) · CGPA: 7.56</div>
+    <div class="edu-item"><strong>Intermediate</strong> — Narayana Junior College · 87%</div>
+    <div class="edu-item"><strong>SSC</strong> — Gowtham Model School · CGPA: 10</div>
+  </div>
+</section>
+
+<div class="line-sep"><span></span></div>
+
+<!-- Projects -->
+<section id="projects" class="section projects">
+  <h2>Projects</h2>
+  <div class="projects-wrap">
+    <article class="project-card">
+      <h3>ESP32 Web Server for Home Automation</h3>
+      <p>IoT-based home automation with real-time controls and monitoring.</p>
+      <a class="btn-link" href="#" target="_blank">GitHub</a>
+    </article>
+    <article class="project-card">
+      <h3>Voice & Remote-Controlled Car with Vision</h3>
+      <p>Voice control, object detection, edge-detection, and solar charging.</p>
+      <a class="btn-link" href="#" target="_blank">GitHub</a>
+    </article>
+  </div>
+</section>
+
+<div class="line-sep"><span></span></div>
+
+<!-- Certifications -->
+<section id="certs" class="section certs">
+  <h2>Certifications & Achievements</h2>
+  <div class="cert-grid">
+    <div class="cert">AI Prompt Engineering — Google & Infosys</div>
+    <div class="cert">PCB Design using Proteus</div>
+    <div class="cert">IoT & Embedded Systems (Arduino IDE)</div>
+  </div>
+</section>
+
+<div class="line-sep"><span></span></div>
+
+<!-- Contact / Footer -->
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:navadeepkoppoku1@gmail.com">navadeepkoppoku1@gmail.com</a></p>
+  <p><a href="resume.pdf" download>Download Resume</a></p>
+</section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <small>© Navadeep Koppoku</small>
+</footer>
+
+<script src="globe.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
